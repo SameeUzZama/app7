@@ -1,8 +1,9 @@
 import "./App.css";
+import FilteredStudent from "./Components/Practice1/FilteredStudent";
 // import MappingParent from "./Components/FunctionalComp/MappingParent";
 // import FilteredEmp from "./Components/Practice/FilteredEmp";
 // import MappingPractice from "./Components/Practice/MappingPractice";
-import Mappingpractice1 from "./Components/Practice1/Mappingpractice1";
+// import Mappingpractice1 from "./Components/Practice1/Mappingpractice1";
 // import { objEmp } from "./Components/Destructuring";
 // import MappingParent from "./Components/FunctionalComp/MappingParent";
 
@@ -15,7 +16,8 @@ function App() {
       {/* <MappingParent /> */}
       {/* <MappingPractice /> */}
       {/* <FilteredEmp /> */}
-      <Mappingpractice1 />
+      {/* <Mappingpractice1 /> */}
+      <FilteredStudent />
     </div>
   );
 }

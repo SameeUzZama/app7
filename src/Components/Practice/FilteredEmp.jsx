@@ -1,12 +1,11 @@
 import React from "react";
-import { filtered } from "./Filtered";
+import { filtered } from "../Practice1/Filteredstud";
 
 const FilteredEmp = () => {
   const finaldata = filtered;
   const output = finaldata.data.filter(
     (elem) => elem.age > 20 && elem.gender === "male"
   );
-
   return (
     <div>
       <h2>filtered data</h2>
