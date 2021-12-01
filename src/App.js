@@ -17,7 +17,7 @@ function App() {
       {/* <MappingPractice /> */}
       {/* <FilteredEmp /> */}
       {/* <Mappingpractice1 /> */}
-      <FilteredStudent />
+      {/* <FilteredStudent /> */}
     </div>
   );
 }
