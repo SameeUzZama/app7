@@ -1,7 +1,7 @@
 import "./App.css";
-import Api from "./Components/Api/Api";
-import Inputvalue from "./Components/UseState/InputValue";
-import StateWithMap from "./Components/UseState/StateWithMap";
+import API from "./Components/Api/Api";
+// import Inputvalue from "./Components/UseState/InputValue";
+// import StateWithMap from "./Components/UseState/StateWithMap";
 // import Conhandler from "./Components/Conditionalrendering/Conditionalpract";
 // import Counteruser from "./Components/Counter/Counteruser";
 // import Conditionalrender from "./Components/Conditionalrendering/Conditionalrender";
@@ -32,7 +32,7 @@ function App() {
       {/* <Conhandler /> */}
       {/* <StateWithMap />
       <Inputvalue /> */}
-      <Api />
+      <API />
     </div>
   );
 }

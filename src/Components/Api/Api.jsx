@@ -1,24 +1,30 @@
-import React, { useState } from "react";
-// import axios from "axios";
-const Api = () => {
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+const API = () => {
   const [resData, setResData] = useState([]);
-  console.log("resData", setResData);
-  const baseURL = "https://jsonplaceholder.typicode.com/posts";
-  fetch(baseURL)
-    .then((res) => res.json())
-    .then((out) => setResData([...out]))
-    .catch((error) => {
-      console.log(error);
-    });
+  useEffect(() => {
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((res) => {
+        console.log(res);
+        setResData(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  // const baseURL = "https://jsonplaceholder.typicode.com/posts";
+  // fetch(baseURL)
+  //   .then((res) => res.json())
+  //   .then((out) => setResData([...out]))
+  //   .catch((error) => {
+  //     console.log(error);
+  //   });
   return (
     <div>
-      <h1>Fetching API</h1>
-      <div>
-        <h2>Title : </h2>
-        <p>Body : </p>
-      </div>
+      {resData.map((elem) => (
+        <h1 key={elem.id}>{elem.title}</h1>
+      ))}
     </div>
   );
 };
 
-export default Api;
+export default API;
